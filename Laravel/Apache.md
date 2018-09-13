@@ -71,7 +71,7 @@ Notice the **`AllowOverride All`** in **`<Directory />`**
 ## ENABLE THE REWRITE MODULE
 
 ```bash
-a2endmod rewrite
+a2enmod rewrite
 ```
 
 ## RESTART APACHE2 SERVICE

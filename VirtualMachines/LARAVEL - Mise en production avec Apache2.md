@@ -109,6 +109,11 @@ Il faut modifier la configuration afin de permettre l'utilisation des `.htaccess
 ```
 **Remarquez le changement de la valeur d'AllowOverride !**
 
+Il faut également activer un module Apache :
+```bash
+a2enmod rewrite
+```
+
 Maintenant que la configuration de Apache2 est complète, nous pouvons la recharger :
 ```bash
 service apache2 restart
