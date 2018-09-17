@@ -5,7 +5,7 @@ Ce guide vous permettra de mettre en production un projet Laravel sur un serveur
 - [LARAVEL - Mise en production d'un projet avec Nginx](#laravel---mise-en-production-dun-projet-avec-nginx)
 - [Pré-requis](#pr%C3%A9-requis)
 - [ETAPE 01 - Installation du Projet Laravel](#etape-01---installation-du-projet-laravel)
-- [ETAPE 02 - Configuration de NGINX](#etape-02---configuration-de-nginx)
+- [ETAPE 02 - Configuration de Nginx](#etape-02---configuration-de-nginx)
 - [ETAPE 03 - Tester la configurarion](#etape-03---tester-la-configurarion)
 
 # Pré-requis
@@ -25,7 +25,7 @@ cd /var/www/html
 composer create-project laravel/laravel laravel
 ```
 
-# ETAPE 02 - Configuration de NGINX
+# ETAPE 02 - Configuration de Nginx
 
 La configuration des hôtes virtuels (Virtual Hosts) sur Nginx se situe dans le dossier `/etc/nginx/conf.d`
 

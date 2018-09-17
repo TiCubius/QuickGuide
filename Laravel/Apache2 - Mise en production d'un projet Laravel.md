@@ -5,13 +5,13 @@ Ce guide vous permettra de mettre en production un projet Laravel sur un serveur
 - [LARAVEL - Mise en production d'un projet avec Apache2](#laravel---mise-en-production-dun-projet-avec-apache2)
 - [Pré-requis](#pr%C3%A9-requis)
 - [ETAPE 01 - Installation du Projet Laravel](#etape-01---installation-du-projet-laravel)
-- [ETAPE 02 - Configuration de NGINX](#etape-02---configuration-de-nginx)
+- [ETAPE 02 - Configuration d'Apache 2](#etape-02---configuration-dapache-2)
 - [ETAPE 03 - Tester la configurarion](#etape-03---tester-la-configurarion)
 
 # Pré-requis
 
 Afin de suivre ce guide, vous devez:
-- Installer le paquet apache2
+- Installer le paquet `apache2`
 - Installer les paquets php nécessaires au fonctionnement de Laravel
 - Posséder un projet Laravel (il peut s'agir de l'installation de base)
 - Posséder un nom de domaine (dans notre exemple, il s'agira de `exemple.fr`)
@@ -25,7 +25,7 @@ cd /var/www/html
 composer create-project laravel/laravel laravel
 ```
 
-# ETAPE 02 - Configuration de NGINX
+# ETAPE 02 - Configuration d'Apache 2
 
 La configuration des hôtes virtuels (Virtual Hosts) sur Apache2 se situe dans le dossier `/etc/apache2/sites-enabled`
 
@@ -56,7 +56,7 @@ Ce fichier contiendra la configuration suivante :
 - `ServerName "exemple.fr"` indique le nom de domaine sur lequel la configuration est active
 - `DocumentRoot /var/www/html/laravel/public` indique le dossier dans lequel se situe notre projet. On souhaite que le visiteur atteigne immédiatement le dossier public.
 - `<Directory />` indique la configuration spécifique lorsque le visiteur arrive sur le nom de domaine
-- `Options FollowSymLinks` indique à Apache2 de suivre les liens symboliques (dossier storage)
+- `Options FollowSymLinks` indique à Apache2 de suivre les liens symboliques (ex: dossier storage)
 - `AllowOverride All` indique à Apache2 d'utiliser les fichiers `.htaccess`
 
 
@@ -125,6 +125,5 @@ Votre projet devrait maintenant être fonctionnel. \
 Afin de vérifier votre configuration, essayer d'accéder à une page ne correspondant à aucune route, située dans un "sous-dossier" : `exemple.fr/test/page/not/found`
 
 Si le message d'erreur est celle d'Apache2, la configuration n'est pas correcte, s'il s'agit de celle de Laravel, votre configuration est complète.
-
 
 ![Page d'erreur Laravel](images/nginx.png)
