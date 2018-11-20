@@ -14,7 +14,7 @@ Ce guide vous permettera de mettre en place une Machine Virtuelle (**VM**) poss�
     - [ETAPE 02A - Réseau NAT](#etape-02a---r%C3%A9seau-nat)
     - [ETAPE 02B - Réseau Privé Hôte](#etape-02b---r%C3%A9seau-priv%C3%A9-h%C3%B4te)
 - [ETAPE 03 - Configuration des OS](#etape-03---configuration-des-os)
-    - [ETAPE 03A - Configuration de DEBIAN 9 Server](#etape-03a---configuration-de-debian-9-server)
+    - [ETAPE 03A - Configuration de DEBIAN 9.6](#etape-03a---configuration-de-debian-9.6)
 
 # ETAPE 01 - Configuration de VirtualBox
 
@@ -131,7 +131,7 @@ Ainsi, un Debian 9.5 Server demandera une édition d'un fichier de configuration
 
 Référez-vous aux manuels correspondant à votre OS et à sa version afin de configurer correctement les nouvelles cartes réseau.
 
-## ETAPE 03A - Configuration de DEBIAN 9 Server
+## ETAPE 03A - Configuration de DEBIAN 9.6
 
 
 **ATTENTION: Il est possible que le nom de votre interface soit différente que celle indiquée dans ce guide, que l'interface soit déjà configurée ou que vous possédiez plus ou moins d'interface. Vérifiez bien que les modifications sont conforme avec ce que vous rapporte `ip -c a` !**
