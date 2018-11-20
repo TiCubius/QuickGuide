@@ -14,7 +14,7 @@ Ce guide vous permettera de mettre en place une Machine Virtuelle (**VM**) poss�
     - [ETAPE 02A - Réseau NAT](#etape-02a---r%C3%A9seau-nat)
     - [ETAPE 02B - Réseau Privé Hôte](#etape-02b---r%C3%A9seau-priv%C3%A9-h%C3%B4te)
 - [ETAPE 03 - Configuration des OS](#etape-03---configuration-des-os)
-    - [ETAPE 03A - Configuration de DEBIAN 9.6](#etape-03a---configuration-de-debian-9.6)
+    - [ETAPE 03A - Configuration de DEBIAN 9.6](#etape-03a---configuration-de-debian-96)
 
 # ETAPE 01 - Configuration de VirtualBox
 
